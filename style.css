@@ -109,8 +109,13 @@ body{
     font-size: var(--fontSize-body-4);
     font-weight: var(--weight-regular);
     line-height: var(--lineHeight-5);
-    overflow: hidden;
+    overflow: overlay;
     height: 300vh;
 }
 body.loaded{ overflow: overlay; }
 body.nav-active { overflow: hidden; }
+::-webkit-scrollbar{ width: 5px; }
+::-webkit-scrollbar-track{ background-color: transparent; }
+::-webkit-scrollbar-thumb{ background-color: var(--gold-crayola); }
+
+/* Preload */
