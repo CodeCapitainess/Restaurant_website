@@ -119,3 +119,16 @@ body.nav-active { overflow: hidden; }
 ::-webkit-scrollbar-thumb{ background-color: var(--gold-crayola); }
 
 /* Preload */
+.preload{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gold-crayola);
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: var(--transition-1);
+}
