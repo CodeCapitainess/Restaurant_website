@@ -93,4 +93,31 @@ const slideNext = function () {
 
 heroSliderNextBtn.addEventListener("click", slideNext);
 
-const slidePrev = function () {}
+const slidePrev = function () {
+    if(currentSlidePos <= 0){
+        currentSlidePos = heroSliderItems.length - 1;
+    } else {
+        currentSlidePos--;
+    }
+
+    updateSliderPos();
+}
+
+heroSliderPrevBtn.addEventListener("click", slidePrev);
+
+
+/**
+ * auto slide 
+*/
+
+let autoSlideInterval;
+
+const autoSlide = function () {
+    autoSlideInterval = setInterval(function () {
+        slideNext();
+    }, 7000);
+}
+
+addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
+    clearInterval(autoSlideInterval);
+});
