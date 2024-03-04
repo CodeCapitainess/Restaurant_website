@@ -544,3 +544,26 @@ body.nav-active { overflow: hidden; }
     letter-spacing: var(--letterSpacing-1);
     line-height: var(--lineHeight-3);
 }
+.hero-btn::after{
+    inset: 0;
+    border: 1px solid var(--gold-crayola);
+    animation: rotate360 15s linear infinite;
+}
+.slider-reveal{
+    transform: translateY(30px);
+    opacity: 0;
+}
+.hero .slider-item.active .slider-reveal{
+    animation: sliderReveal 1s ease forwards;
+}
+@keyframes sliderReveal{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
