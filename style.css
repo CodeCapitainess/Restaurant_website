@@ -713,4 +713,5 @@ body.nav-active { overflow: hidden; }
     text-decoration: none;
     color: var(--davys-grey);
 }
-.special-dish-content .span{ color: var(--gold-crayola);}
+.special-dish-content .span{ color: var(--gold-crayola); }
+.special-dish-content .btn{ margin-inline: auto; }
