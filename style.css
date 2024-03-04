@@ -329,6 +329,12 @@ body.nav-active { overflow: hidden; }
     z-index: -1;
 }
 .w-100{ width: 100%; }
+.move-anim{ animation: move 5s linear infinite; }
+@keyframes move{
+    0%,
+    100%{ transform: translateY(0); }
+    50%{ transform: translateY(30px); }
+}
 
 /* Preload */
 .preload{
@@ -763,3 +769,17 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
     margin-block-start: 26px;
 }
+.menu .shape{
+    display: block;
+    width: 70%;
+}
+.menu .shape-2{
+    top: 0;
+    left: 0;
+}
+.menu .shape-3{
+    bottom: 0;
+    right: 0;
+}
+
+/* Testimonials */
