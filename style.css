@@ -524,8 +524,8 @@ body.nav-active { overflow: hidden; }
 .hero .btn{ margin-inline: auto; }
 .hero-btn{
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 55px;
+    right: 25px;
     z-index: 2;
     background-color: var(--gold-crayola);
     width: 110px;
@@ -566,4 +566,7 @@ body.nav-active { overflow: hidden; }
         opacity: 1;
     }
 }
-
+.hero .slider-item.active .section-subtitle{ animation-delay: 500ms; }
+.hero .slider-item.active .hero-title{ animation-delay: 1000ms; }
+.hero .slider-item.active .hero-text{ animation-delay: 1.5s; }
+.hero .slider-item.active .btn{ animation-delay: 2s; }
