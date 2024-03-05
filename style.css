@@ -972,3 +972,22 @@ textarea.input-field{
     transition: var(--transition-1);
 }
 .footer-brand .contact-link:is(:hover, :focus-visible){ color: var(--gold-crayola); }
+.footer-brand .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block-end: 40px 25px;
+}
+.footer-brand .separator{ animation: rotate360 15s linear infinite; }
+.footer-brand .label-1{ margin-block-end: 30px; }
+.footer-brand .label-1 .span{
+    display: inline;
+    color: var(--white);
+}
+.footer-brand .icon-wrapper{ margin-block-end: 0; }
+.footer-brand .icon-wrapper .input-field{ cursor: text; }
+.footer-brand .btn{ min-width: 100%; }
+.footer-list{
+    display: grid;
+    gap: 20px;
+}
