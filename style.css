@@ -1197,3 +1197,30 @@ textarea.input-field{
 
     .footer-brand{ grid-column: 1 / 3; }
 }
+
+/**
+ * responsive for larger than 992px screen
+*/ 
+@media(min-width: 992px){
+
+    :root{ --section-space: 100px; }
+    :is(.service, .event) .container{ max-width: unset; }
+    :is(.service, .event) .grid-list{ grid-template-columns: repeat(3, 1fr); }
+    :is(.service, .event) .grid-list:last-child{
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .topbar-item:not(.link){ display: flex; }
+    .topbar .item-2{ margin-inline-end: auto; }
+
+    .service .shape{ display: block; }
+    .service .shape-1{
+        bottom: 0;
+        left: 0;
+    }
+    .shape .shape-2{
+        top: 0;
+        right: 0;
+    }
+}
