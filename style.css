@@ -930,4 +930,16 @@ textarea.input-field{
     letter-spacing: var(--letterSpacing-1);
     line-height: 14px;
 }
-.event-card .card-subtitle{}
+.event-card .card-subtitle{
+    color: var(--gold-crayola);
+    text-transform: uppercase;
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letterSpacing-2);
+    margin-block-end: 5px;
+}
+.event-card .card-banner .img-cover{ transition: var(--transition-2); }
+.event-card:is(:hover, :focus-within) .img-cover{ transform: scale(1.05); }
+.event .btn{
+    margin-inline: auto;
+    margin-block-start: 40px;
+}
