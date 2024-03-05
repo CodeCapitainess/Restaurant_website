@@ -1352,7 +1352,26 @@ textarea.input-field{
     }
 
     .form-left,
-    .form-right{ padding-inline-start: 75px 60px; }
+    .form-right{ padding: 75px 60px; }
 
     .features .grid-list{ grid-template-columns: repeat(4, 1fr); }
+}
+
+/**
+ * responsive for larger than 1200px screen
+*/ 
+@media(min-width: 1400px){
+
+    .navbar{ margin-inline: auto; }
+
+    .about-content{ padding-inline-end: 90px; }
+    .about .shape{
+        display: block;
+        top: 46%;
+        left: 0;
+    }
+
+
+}.special-dish{
+    overflow: visible;
 }
