@@ -1268,4 +1268,31 @@ textarea.input-field{
         display: grid;
         grid-template-columns: 1fr 0.5fr;
     }
+
+    .footer .grid-list{
+        grid-template-columns: 0.45fr 1fr 0.45fr;
+        align-items: center;
+    }
+    .footer-brand{
+        grid-column: auto;
+        order: 1;
+        padding-block: 100px;
+    }
+    .footer-list:last-child{ order: 2; }
+}
+
+/**
+ * responsive for larger than 1200px screen
+*/ 
+@media(min-width: 1200px){
+
+    :root{ --fontSize-title-2: 2.5rem; }
+    .container,
+    :is(.service, .event) .container{
+        max-width: 1200px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .topbar .container{ max-width: unset; }
 }
