@@ -956,8 +956,19 @@ textarea.input-field{
 }
 .footer-brand::before,
 .footer-brand::after{
-    content: "";
-    position: absolute;
     top: 0;
     width: 15px;
+    height: 100%;
+    background-image: url(./images/footer-form-pattern.svg);
 }
+.footer-brand::before{ left: 0; }
+.footer-brand::after{ right: 0; }
+.footer-brand :is(.body-4, .label-1){
+    color: var(--quick-silver);
+    line-height: var(--letterSpacing-2);
+}
+.footer-brand .contact-link{
+    margin-block: 6px;
+    transition: var(--transition-1);
+}
+.footer-brand .contact-link:is(:hover, :focus-visible){ color: var(--gold-crayola); }
