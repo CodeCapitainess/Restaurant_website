@@ -1372,7 +1372,7 @@ textarea.input-field{
     .about .shape{
         display: block;
         top: 46%;
-        left: -20px;
+        left: 0;
     }
 
     .special-dish{
