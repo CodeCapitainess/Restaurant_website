@@ -1317,4 +1317,21 @@ textarea.input-field{
         font-weight: var(--weight-bold);
         letter-spacing: var(--letterSpacing-1);
     }
+    .navbar-link::after{ display: block; }
+    .navbar-link.active::after{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    .header .btn{ margin-inline-start: 0; }
+
+    .hero{ height: 880px; }
+    .hero-btn{
+        bottom: 50px;
+        right: 50px;
+        transform: scale(1);
+    }
+
+    .service .grid-list{ gap: 150px; }
+    .service .grid-list li:nth-child(2n+1){ transform: translateY(-160px); }
+    .service .section-text{ margin-block-end: 75px; }
 }
