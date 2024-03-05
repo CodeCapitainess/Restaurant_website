@@ -946,3 +946,18 @@ textarea.input-field{
 
 
 /* Footer */
+.footer-top{ margin-block-end: 70px; }
+.footer-brand{
+    position: relative;
+    padding: 50px 40px;
+    background: var(--smoky-black-1) url(./images/footer-form-bg.png);
+    background-position: center top;
+    background-repeat: repeat;
+}
+.footer-brand::before,
+.footer-brand::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
